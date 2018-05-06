@@ -1,6 +1,6 @@
-# my-vue
+# vue-pc-project
 
-> my vue project
+> vue-pc-project
 
 ## Build Setup
 
