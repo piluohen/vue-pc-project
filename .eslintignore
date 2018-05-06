@@ -1,4 +1,4 @@
-/build/
+/build/*.js
 /config/
-/dist/
+/dist/**
 /*.js
