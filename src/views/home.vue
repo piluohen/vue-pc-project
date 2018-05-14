@@ -1,11 +1,11 @@
 <template lang="pug">
-  .hello-world
-    span 你好
+  .home-page
+    span 首页
 </template>
 
 <script>
   export default {
-    name: 'HelloWorld'
+    name: 'HomePage'
   }
 </script>
 
