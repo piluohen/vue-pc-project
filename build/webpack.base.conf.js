@@ -20,7 +20,7 @@ const createLintingRule = () => ({
 })
 
 module.exports = {
-  context: path.resolve(__dirname, '../'),
+  // context: path.resolve(__dirname, '../'),
   entry: {
     app: './src/main.js'
   },
@@ -36,15 +36,15 @@ module.exports = {
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
       '@': resolve('src'),
-      '@static': path.resolve(__dirname, '../static'),
-      '@views': path.resolve(__dirname, '../src/views'),
-      '@assets': path.resolve(__dirname, '../src/assets'),
-      '@utils': path.resolve(__dirname, '../src/utils'),
-      '@api': path.resolve(__dirname, '../src/api'),
-      '@router': path.resolve(__dirname, '../src/router'),
-      '@components': path.resolve(__dirname, '../src/components'),
-      '@store': path.resolve(__dirname, '../src/store'),
-      '@mixins': path.resolve(__dirname, '../src/mixins')
+      'static': path.resolve(__dirname, '../static'),
+      'views': path.resolve(__dirname, '../src/views'),
+      'assets': path.resolve(__dirname, '../src/assets'),
+      'utils': path.resolve(__dirname, '../src/utils'),
+      'api': path.resolve(__dirname, '../src/api'),
+      'router': path.resolve(__dirname, '../src/router'),
+      'components': path.resolve(__dirname, '../src/components'),
+      'store': path.resolve(__dirname, '../src/store'),
+      'mixins': path.resolve(__dirname, '../src/mixins')
     }
   },
   module: {

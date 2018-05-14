@@ -1,15 +1,44 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HomePage from '@views/home'
+import Login from 'views/login/login'
+import Error404 from 'views/error/404'
+import HomePage from 'views/home'
 
 Vue.use(Router)
 
+export const routes = [
+  {
+    path: '/',
+    redirect: '/home'
+  },
+  {
+    path: '/login',
+    name: 'Login',
+    meta: {
+      title: '登录'
+    },
+    component: Login
+  },
+  {
+    path: '/404',
+    name: 'Error404',
+    meta: {
+      title: '404'
+    },
+    component: Error404
+  },
+  {
+    path: '/home',
+    name: 'HomePage',
+    meta: {
+      title: '首页'
+    },
+    component: HomePage
+  }
+]
+
 export default new Router({
-  routes: [
-    {
-      path: '/',
-      name: 'HomePage',
-      component: HomePage
-    }
-  ]
+  mode: 'history',
+  base: '/',
+  routes
 })
