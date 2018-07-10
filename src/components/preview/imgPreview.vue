@@ -38,6 +38,9 @@
         if (this.$refs['carousel'] && this.$refs['carousel'].activeIndex !== val) {
           this.$refs.carousel.setActiveItem(val)
         }
+      },
+      imgData () {
+        this.showArrowMethod(0)
       }
     },
     methods: {

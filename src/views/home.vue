@@ -56,10 +56,10 @@
           }
         ],
         imgList: [
-          // require('assets/images/001.jpg'),
-          // require('assets/images/002.jpg'),
-          // require('assets/images/003.jpg'),
-          // require('assets/images/004.jpg'),
+          require('assets/images/001.jpg'),
+          require('assets/images/002.jpg'),
+          require('assets/images/003.jpg'),
+          require('assets/images/004.jpg'),
           require('assets/images/005.jpg')
         ]
       }
