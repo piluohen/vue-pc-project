@@ -1,6 +1,7 @@
 <template lang="pug">
   .home-page
     div 首页
+    el-button(@click="goToStorge") 缓存页
     .checkbox-area
       el-checkbox-group(v-for="v in allList", :key="v.id", v-model="checkList", @change="checkChangeHandle")
         el-checkbox(v-for="item in v.list" :key="item.label", :label="item.value") {{item.label}}
@@ -77,6 +78,9 @@
           urlList: urlList
         }
         this.imgIndex = index
+      },
+      goToStorge () {
+        this.$router.push({path: '/storge'})
       }
     }
   }
